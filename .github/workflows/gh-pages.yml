@@ -24,6 +24,12 @@ jobs:
         MY_API_KEY: ${{ secrets.MY_API_KEY }}
       run: |
         npm run config 
-    - name: Build
+    - name: Tests
+      run: |
+       npm run test
+    - name: Build      
       run: |
        npm run build --base-href="https://michalgwozdz2.github.io/backbase-weather/"
+    - name: Deploy
+      run: |
+       npm run ghpages

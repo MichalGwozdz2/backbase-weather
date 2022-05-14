@@ -17,6 +17,7 @@ const envConfigFile = `export const environment = {
   },
   restApi: {
     openWeatherMap: 'https://api.openweathermap.org',
+    openWeatherImages: 'http://openweathermap.org'
   }
 };
 `;
