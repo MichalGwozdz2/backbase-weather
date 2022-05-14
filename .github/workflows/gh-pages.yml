@@ -15,10 +15,15 @@ jobs:
       with:
         node-version: v14.15.1
 
-    - name: Prepare and deploy
+    - name: Install
+      run: |
+        npm install
+    - name: Assign API_KEY
       env:
         API_KEY: ${{ secrets.API_KEY }}
       run: |
-        npm install
-        npm run config
-        npm run build --prod --base-href="https://michalgwozdz2.github.io/backbase-weather/"
+        echo API_KEY: ${{ secrets.API_KEY }}
+        npm run config ${{ secrets.API_KEY }}
+    - name: Build
+      run: |
+       npm run build --prod --base-href="https://michalgwozdz2.github.io/backbase-weather/"

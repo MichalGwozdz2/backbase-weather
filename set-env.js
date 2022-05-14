@@ -5,10 +5,12 @@ const prodEnvPath = './src/environments/environment.prod.ts';
 let key;
 
 if (process.env.API_KEY) {
+  console.log('DETECTED SECRET', process.env.API_KEY);
   key = `'${process.env.API_KEY}'`;
 }
 
 if (process.argv[2]) {
+  console.log('DETECTED API KEY', process.argv[2]);
   key = `'${process.argv[2]}'`;
 }
 
