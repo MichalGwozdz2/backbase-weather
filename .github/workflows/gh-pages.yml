@@ -31,7 +31,7 @@ jobs:
 
     - name: Build
       run: |
-       npm run build -- --base-href="${{ secrets.MY_HREF }}"
+       npm run build --base-href="${{ secrets.MY_HREF }}"
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
