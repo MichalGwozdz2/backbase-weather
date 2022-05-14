@@ -21,4 +21,4 @@ jobs:
       run: |
         npm install
         npm run config
-        npm run build --prod --base-href "https://michalgwozdz2.github.io/backbase-weather/"
+        npm run build --prod --base-href="https://michalgwozdz2.github.io/backbase-weather/"
