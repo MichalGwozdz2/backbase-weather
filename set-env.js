@@ -4,6 +4,10 @@ const devEnvPath = './src/environments/environment.ts';
 const prodEnvPath = './src/environments/environment.prod.ts';
 let key;
 
+console.log(process.env)
+
+console.log(process.env.MY_API_KEY, 'x', process.env.API_KEY)
+
 if (process.env.MY_API_KEY) {
   console.log('DETECTED SECRET', process.env.MY_API_KEY);
   key = `'${process.env.API_KEY}'`;
