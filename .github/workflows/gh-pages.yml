@@ -37,5 +37,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}
-        BRANCH: main
+        BRANCH: gh-pages
         FOLDER: dist/backbase-weather-exercise
