@@ -3,12 +3,12 @@ import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'weather',
+    path: '',
     loadChildren: () => import('./views/weather/weather.module').then(module => module.WeatherModule)
   },
   {
     path: '**',
-    redirectTo: 'weather',
+    redirectTo: '',
     pathMatch: 'full',
   },
 ];
