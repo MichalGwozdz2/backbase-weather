@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: github-pages
 
-    steps: 
+    steps:
     - name: Checkout
       uses: actions/checkout@v2
 
@@ -19,14 +19,17 @@ jobs:
     - name: Install
       run: |
         npm install
+
     - name: Assign API_KEY
       env:
         MY_API_KEY: ${{ secrets.MY_API_KEY }}
       run: |
         npm run config 
-    - name: Build      
+
+    - name: Build
       run: |
        npm run build --base-href="${{ secrets.MY_HREF }}"
+
     - name: Deploy
       run: |
-       npm run ghpages --name="MG" --email="michal.gwozdz2@gmail.com"
+       npm run ghpages --name=${{ secrets.NAME }} --email=${{ secrets.EMAIL }}
