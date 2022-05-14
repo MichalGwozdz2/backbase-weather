@@ -1,0 +1,82 @@
+[
+  {
+    "id": 2643743,
+    "name": "London",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.12574,
+      "lat": 51.50853
+    }
+  },
+  {
+    "id": 5128638,
+    "name": "New York",
+    "state": "NY",
+    "country": "US",
+    "coord": {
+      "lon": -75.499901,
+      "lat": 43.000351
+    }
+  },
+  {
+    "id": 5143282,
+    "name": "Warsaw",
+    "state": "NY",
+    "country": "US",
+    "coord": {
+      "lon": -78.13279,
+      "lat": 42.740059
+    }
+  },
+  {
+    "id": 1796236,
+    "name": "Shanghai",
+    "state": "",
+    "country": "CN",
+    "coord": {
+      "lon": 121.458061,
+      "lat": 31.222219
+    }
+  },
+  {
+    "id": 4905599,
+    "name": "Pekin",
+    "state": "IL",
+    "country": "US",
+    "coord": {
+      "lon": -89.640663,
+      "lat": 40.567539
+    }
+  },
+  {
+    "id": 1275339,
+    "name": "Mumbai",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 72.847939,
+      "lat": 19.01441
+    }
+  },
+  {
+    "id": 1699805,
+    "name": "Mexico",
+    "state": "",
+    "country": "PH",
+    "coord": {
+      "lon": 120.719803,
+      "lat": 15.0646
+    }
+  },
+  {
+    "id": 3435907,
+    "name": "Buenos Aires",
+    "state": "",
+    "country": "AR",
+    "coord": {
+      "lon": -60.0,
+      "lat": -36.0
+    }
+  }
+]
