@@ -6,7 +6,7 @@
     "config": "node set-env.js",
     "start": "ng serve",
     "start:prod": "ng serve --configuration production",
-    "build": "ng build",
+    "build": "ng build --production",
     "ghpages": "npx angular-cli-ghpages --dir=dist/backbase-weather-exercise --no-silent",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

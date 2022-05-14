@@ -39,6 +39,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://michalgwozdz2.github.io/backbase-weather/",
               "budgets": [
                 {
                   "type": "initial",
