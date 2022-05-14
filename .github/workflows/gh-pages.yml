@@ -22,10 +22,7 @@ jobs:
       env:
         API_KEY: ${{ secrets.API_KEY }}
       run: |
-        echo 1: ${{ env.API_KEY }}
-        echo 2: ${{ secrets.API_KEY }}
-        echo 3: ${{ process.env.API_KEY }}
-        npm run config ${{ secrets.API_KEY }}
+        npm run config "$API_KEY"
     - name: Build
       run: |
        npm run build --prod --base-href="https://michalgwozdz2.github.io/backbase-weather/"
