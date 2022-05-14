@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   apiKeys: {
-    openWeatherApiKey: undefined,
+    openWeatherApiKey: 'test',
   },
   restApi: {
     openWeatherMap: 'https://api.openweathermap.org',
