@@ -26,8 +26,7 @@
       "NO_PROBLEM": "No problem! You can add it now!",
       "API_KEY_EMPTY": "Api Key is empty!",
       "API_KEY_NOT_VALID": "Api Key is not valid!",
-      "ADD_API_KEY": "Add Api Key",
-      "UPDATE": "Update Api Key",
+      "UPDATE": "Assign Api Key",
       "UPDATE_API_KEY": "Please, update your Api Key"
     }
   }

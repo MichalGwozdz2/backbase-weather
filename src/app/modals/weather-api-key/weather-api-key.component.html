@@ -26,6 +26,6 @@
   <button class="mt-2 whitespace-nowrap text-white bg-violet-500 hover:bg-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
           [disabled]="!(form.controls['apiKey'].valid && !form.controls['apiKey'].pristine)"
           (click)="addKey()">
-    {{ (isNew ? 'WEATHER.API_KEY_MODAL.ADD_API_KEY' : 'WEATHER.API_KEY_MODAL.UPDATE') | translate }}
+    {{ 'WEATHER.API_KEY_MODAL.UPDATE' | translate }}
   </button>
 </div>
