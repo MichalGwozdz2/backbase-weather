@@ -4,7 +4,9 @@ const devEnvPath = './src/environments/environment.ts';
 const prodEnvPath = './src/environments/environment.prod.ts';
 let key;
 
-if (process.argv[2]) {
+if (process.env.MY_API_KEY) {
+  key = `'${process.env.MY_API_KEY}'`;
+} else if (process.argv[2]) {
   key = `'${process.argv[2]}'`;
 }
 
