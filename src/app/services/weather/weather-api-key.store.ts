@@ -58,6 +58,7 @@ export class WeatherApiKeyStore {
    * @private
    */
   private assignAppIdFromEnv(): void {
+    console.log(this.environmentService.getEnvironment())
     const appId = this.environmentService.getEnvironment()?.apiKeys.openWeatherApiKey;
 
     if (!appId) {
