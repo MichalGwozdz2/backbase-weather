@@ -19,6 +19,9 @@ jobs:
       run: |
         npm install
     - name: Assign API_KEY
+      shell: bash
+      env:
+        MY_API_KEY: ${{ secrets.MY_API_KEY }}
       run: |
         npm run config ${{ secrets.MY_API_KEY }}
     - name: Build
