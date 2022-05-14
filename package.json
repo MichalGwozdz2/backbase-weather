@@ -7,6 +7,9 @@
     "start": "ng serve",
     "start:prod": "ng serve --configuration production",
     "build": "ng build",
+    "push-gh": "npm run config && npm run build-gh && npm run ghpages",
+    "build-gh": "ng build --prod --base-href \"https://michalgwozdz2.github.io/backbase-weather/\"",
+    "ghpages": "npx angular-cli-ghpages --dir=dist/backbase-weather-exercise ",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

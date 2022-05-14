@@ -2,7 +2,15 @@ const fs = require('fs');
 
 const devEnvPath = './src/environments/environment.ts';
 const prodEnvPath = './src/environments/environment.prod.ts';
-const key = process.argv[2] ? `'${process.argv[2]}'` : null;
+let key;
+
+if (process.env.API_KEY) {
+  key = `'${process.env.API_KEY}'`;
+}
+
+if (process.argv[2]) {
+  key = `'${process.argv[2]}'`;
+}
 
 const envConfigFile = `export const environment = {
   production: false,
