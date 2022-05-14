@@ -9,7 +9,7 @@
     "build": "ng build",
     "ghpages": "npx angular-cli-ghpages --dir=dist/backbase-weather-exercise ",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test --browsers ChromeHeadless --single-run"
   },
   "private": true,
   "dependencies": {
