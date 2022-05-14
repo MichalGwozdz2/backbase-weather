@@ -1,0 +1,33 @@
+<div class="p-5 border-violet-200 border-2 rounded-md bg-violet-50">
+  <h1>{{ 'WEATHER.FORECAST.FORECAST_DESC' | translate }} {{ name }}</h1>
+
+  <form [formGroup]="form" class="mb-4" novalidate>
+    <mat-chip-list [selectable]="true" formControlName="type">
+      <mat-chip #temp="matChip"
+                class="cursor-pointer"
+                (click)="onSelect(temp)"
+                [value]="forecastTypes.TEMP">
+        {{ 'WEATHER.FORECAST.TEMP' | translate }}
+      </mat-chip>
+      <mat-chip #pressure="matChip"
+                class="cursor-pointer"
+                (click)="onSelect(pressure)"
+                [value]="forecastTypes.PRESSURE">
+        {{ 'WEATHER.FORECAST.PRESSURE' | translate }}
+      </mat-chip>
+      <mat-chip #humidity="matChip"
+                class="cursor-pointer"
+                (click)="onSelect(humidity)"
+                [value]="forecastTypes.HUMIDITY">
+        {{ 'WEATHER.FORECAST.HUMIDITY' | translate }}
+      </mat-chip>
+      <mat-chip #clouds="matChip"
+                class="cursor-pointer"
+                (click)="onSelect(clouds)"
+                [value]="forecastTypes.CLOUDS">
+        {{ 'WEATHER.FORECAST.CLOUDS' | translate }}</mat-chip>
+    </mat-chip-list>
+  </form>
+
+  <canvas #lineCanvas></canvas>
+</div>

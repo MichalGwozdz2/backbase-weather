@@ -1,0 +1,13 @@
+<div class="flex flex-col p-5">
+  <app-weather-api-bar (search)="onSearch($event)"></app-weather-api-bar>
+
+  <div class="flex flex-wrap">
+    <app-weather-widget [weather]="weather"
+                        [selected]="selectedIndex === index"
+                        (click)="onSelectedWeather(weather, index)"
+                        *ngFor="let weather of weatherList; let index = index">
+    </app-weather-widget>
+  </div>
+
+  <app-weather-forecast *ngIf="forecast" [forecast]="forecast" [name]="forecastName"></app-weather-forecast>
+</div>

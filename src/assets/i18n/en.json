@@ -1,0 +1,34 @@
+{
+  "WEATHER": {
+    "FILTER_BAR": {
+      "SHOW_WEATHER": "Show Weather",
+      "UPDATE_API_KEY": "Update Api Key",
+      "LAST_SEARCH": "Last search:"
+    },
+    "FORECAST": {
+      "FORECAST_DESC": "Forecast for next 12 hours for",
+      "TEMP": "Temperature",
+      "CLOUDS":"Clouds",
+      "HUMIDITY": "Humidity",
+      "PRESSURE":"Pressure"
+    },
+    "WIDGET": {
+      "STATUS": "Status:",
+      "TEMP": "Temp: {{ temp }} °C",
+      "WIND": "Wind: {{ speed }} km/h",
+      "HUMIDITY": "Humidity: {{ humidity }}%",
+      "PRESSURE": "Pressure: {{ pressure }} hPa"
+    },
+    "API_KEY_MODAL": {
+      "API_KEY": "Weather Api Key",
+      "OOOPS": "Ooops!",
+      "NO_API_KEY": "It seems you didn't add Api Key in your environment file.",
+      "NO_PROBLEM": "No problem! You can add it now!",
+      "API_KEY_EMPTY": "Api Key is empty!",
+      "API_KEY_NOT_VALID": "Api Key is not valid!",
+      "ADD_API_KEY": "Add Api Key",
+      "UPDATE": "Update Api Key",
+      "UPDATE_API_KEY": "Please, update your Api Key"
+    }
+  }
+}

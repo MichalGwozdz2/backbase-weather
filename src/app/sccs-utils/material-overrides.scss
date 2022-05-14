@@ -1,0 +1,36 @@
+.mat-dialog-container {
+  padding: 0 !important;
+}
+
+.transparent .mat-dialog-container {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.0);
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: rgb(139 92 246);
+}
+
+.mat-chip.mat-standard-chip {
+  background: rgba(214, 188, 250, .3);
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background: rgb(139 92 246);
+}
+
+.mat-select-min-line {
+  font-size: 1.5em;
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background: rgb(139 92 246);
+}
+
+.mat-expansion-panel-body {
+  padding: 16px 24px !important;
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: rgb(139 92 246);
+}

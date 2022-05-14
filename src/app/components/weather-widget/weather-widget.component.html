@@ -1,0 +1,22 @@
+<div class="weather-widget p-5 w-full border-violet-200 border-2 rounded-md hover:bg-violet-300 cursor-pointer bg-violet-50"
+  [ngClass]="{'bg-violet-200': selected}">
+  <div class="flex flex-row items-center">
+    <div class="flex flex-col justify-center items-center pr-8 w-1/2 sm:w-auto">
+      <h1>
+        <b>{{ currentWeather.name }}</b>
+      </h1>
+      <div class="rounded-full bg-violet-400">
+        <img [src]="link">
+      </div>
+    </div>
+
+    <div>
+      <h4 class="pb-2">{{ 'WEATHER.WIDGET.STATUS' | translate }} <b>{{ currentWeather.description | titlecase }}</b></h4>
+      <h4 class="pb-2">{{ 'WEATHER.WIDGET.TEMP' | translate: { temp: currentWeather.temp } }}</h4>
+      <h4 class="pb-2">{{ 'WEATHER.WIDGET.WIND' | translate: { speed: currentWeather.windSpeed } }}</h4>
+      <h4 class="pb-2">{{ 'WEATHER.WIDGET.HUMIDITY' | translate: { humidity: currentWeather.humidity } }}</h4>
+      <h4>{{ 'WEATHER.WIDGET.PRESSURE' | translate: { pressure: currentWeather.pressure } }}</h4>
+    </div>
+  </div>
+</div>
+

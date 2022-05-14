@@ -1,0 +1,12 @@
+@import '../../sccs-utils/show-animation';
+
+:host {
+  animation: .5s ease-in showAnimation;
+
+  flex: 48%;
+  margin: .5em;
+
+  @media (max-width: 600px) {
+    flex: 100%;
+  }
+}

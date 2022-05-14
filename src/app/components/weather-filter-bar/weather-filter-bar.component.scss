@@ -1,0 +1,10 @@
+@import '../../sccs-utils/show-animation';
+
+:host {
+  animation: .5s ease-in showAnimation;
+  margin: .5em;
+
+  .last-search {
+    min-width: 150px;
+  }
+}

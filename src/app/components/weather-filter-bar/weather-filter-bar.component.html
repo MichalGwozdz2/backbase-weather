@@ -1,0 +1,40 @@
+<div class="p-5 border-violet-200 border-2 rounded-md bg-violet-50" *ngIf="showView">
+  <form [formGroup]="form"
+        novalidate
+        class="card-body w-full flex flex-col md:flex-row lg:flex-row items-center justify-between">
+    <div class="w-full sm:w-auto">
+      <button type="button"
+              mat-raised-button
+              color="primary"
+              class="w-full"
+              [disabled]="!isNotEmpty"
+              (click)="emitSearch()">
+        {{ 'WEATHER.FILTER_BAR.SHOW_WEATHER' | translate }}
+      </button>
+    </div>
+
+    <mat-form-field class="w-full pl-5">
+      <mat-select formControlName="cities"
+                  [multiple]="true"
+                  (selectionChange)="selectionChanged($event)">
+        <mat-option *ngFor="let c of availableCities" [value]="c.id">{{c.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="flex flex-col last-search items-center justify-center">
+      <div class="pl-4">{{ 'WEATHER.FILTER_BAR.LAST_SEARCH' | translate }}</div>
+      <b class="pl-4 whitespace-nowrap">{{ !currentDate ? '-' : currentDate | date: 'short' }}</b>
+    </div>
+
+    <div class="w-full sm:w-auto pl-0 sm:pl-3 pt-3 sm:pt-0">
+      <button type="button"
+              mat-raised-button
+              color="primary"
+              class="w-full"
+              (click)="updateApiKey()">
+        {{ 'WEATHER.FILTER_BAR.UPDATE_API_KEY' | translate }}
+      </button>
+    </div>
+  </form>
+</div>
+
